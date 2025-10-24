@@ -1,0 +1,95 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1em;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.warp-wrap svg {
+  width: 100%;
+  display: block;
+  top: 0px;
+  left: 0px;
+  overflow: visible;
+  padding: 1em;
+}
+
+
+.svgControl {
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  top: 0;
+  left: 0;
+}
+
+.hull {
+  fill: none;
+  stroke: red;
+  stroke-width: 1px;
+}
+
+
+.vertice-handle {
+  cursor: pointer;
+
+  &:hover {
+    fill: green
+  }
+
+}
+
+
+.showMarkers polygon {
+  marker-start: url(#markerStart);
+  marker-mid: url(#markerRound);
+  marker-end: url(#markerRound);
+  stroke: red;
+  stroke-width: 1%;
+}
+
+
+
+.input-wrap-boxed {
+  margin-bottom: 1em;
+}
+
+.pdd-1em {
+  padding: 1em
+}
+
+.col-preview {
+  padding-top: 10vmin;
+}
+
+
+.elzoomo {
+  position: relative;
+  overflow-x: hidden !important;
+  overflow: visible !important;
+}
+
+
+/* enhance inputs */
+label .input-number {
+  width: 100%;
+  flex: 1;
+  text-align: right
+}
+
+.aside {
+  min-width: 240px
+}
+
+
+label:has(+.input-wrap-boxed) {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}

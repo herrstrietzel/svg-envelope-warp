@@ -1,0 +1,45 @@
+{
+  "name": "svg-envelope-warp",
+  "version": "0.1.0",
+  "description": "Helper for warp.js to warp SVGs by a envelope/hull shape",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herrstrietzel/svg-envelope-warp.git"
+  },
+  "keywords": [
+    "svg",
+    "envelope-warp",
+    "warp.js"
+  ],
+  "author": "herrstrietzel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/herrstrietzel/svg-envelope-warp/issues"
+  },
+  "homepage": "https://github.com/herrstrietzel/svg-envelope-warp#readme",
+  "main": "./dist/svg-envelope-warp.node.js",
+  "module": "./dist/svg-envelope-warp.esm.js",
+  "browser": "./dist/svg-envelope-warp.js",
+  "exports": {
+    ".": {
+      "import": "./dist/svg-envelope-warp.esm.js",
+      "require": "./dist/svg-envelope-warp.node.js"
+    },
+    "./dist/svg-envelope-warp.esm.js": "./dist/svg-envelope-warp.esm.js",
+    "./dist/svg-envelope-warp.js": "./dist/svg-envelope-warp.js",
+    "./dist/svg-envelope-warp.min.js": "./dist/svg-envelope-warp.min.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^3.29.5"
+  },
+  "dependencies": {
+    "terser": "^5.39.0"
+  }
+}
